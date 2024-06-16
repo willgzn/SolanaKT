@@ -19,6 +19,12 @@ allprojects {
         google()
         mavenCentral()
     }
+
+    configurations.all {
+        resolutionStrategy {
+            force("org.bouncycastle:bcprov-jdk15to18:1.78.1")
+        }
+    }
 }
 
 task clean(type: Delete) {

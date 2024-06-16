@@ -6,7 +6,7 @@ plugins {
 }
 
 group 'com.solana'
-version '2.1.5'
+version '2.1.6'
 
 android {
     compileSdkVersion 33
@@ -17,6 +17,7 @@ android {
         targetSdkVersion 33
         versionCode 1
         versionName version
+        multiDexEnabled = true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
