@@ -46,7 +46,7 @@ class HotAccount : Account {
         return signatureProvider.detached(serializedMessage)
     }
 
-   private val secretKey: ByteArray
+    val secretKey: ByteArray
         get() = keyPair.secretKey
 
     companion object {
