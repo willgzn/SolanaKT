@@ -6,7 +6,7 @@ plugins {
 }
 
 group 'com.solana'
-version '2.1.1'
+version '2.1.5'
 
 android {
     compileSdkVersion 33
@@ -95,7 +95,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = "https://maven.pkg.github.com/metaplex-foundation/SolanaKT"
+            url = "https://maven.pkg.github.com/willgzn/SolanaKT"
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
